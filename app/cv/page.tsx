@@ -16,7 +16,7 @@ export default function CVPage() {
             <div className="head-creds">
               <div className="head-title">Architect &amp; Visualizer</div>
               <div className="head-reg">
-                B.Sc. Architecture — AAUA, 2024<br />
+                B.Sc. Architecture — AAUA, 2025<br />
                 Lagos, Nigeria
               </div>
             </div>
