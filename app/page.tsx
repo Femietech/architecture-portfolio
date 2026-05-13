@@ -171,7 +171,7 @@ export default function HomePage() {
 
         <div className="hero-counter">
           <div className="counter-item">
-            <div className="counter-val">4+</div>
+            <div className="counter-val">7+</div>
             <div className="counter-lbl">Years Active</div>
           </div>
           <div className="counter-item">

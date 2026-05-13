@@ -23,9 +23,9 @@ export default function CVPage() {
           </div>
           <div className="head-contacts">
             <div className="hc-item">Lagos, Nigeria</div>
-            <div className="hc-item">hello@archiplus.ng</div>
-            <div className="hc-item">@Archiplus</div>
-            <div className="hc-item">archiplus.ng</div>
+            <div className="hc-item">Adekunleolufemie@gmail.com</div>
+            <div className="hc-item">+234 706 491 6131</div>
+            <div className="hc-item">www.linkedin.com/in/adekunle-olufemie</div>
             <div className="hc-item">Open to relocation &amp; remote</div>
           </div>
         </header>
@@ -40,12 +40,12 @@ export default function CVPage() {
                   <div className="kn-lbl">Years in Practice</div>
                 </div>
                 <div className="kn">
-                  <div className="kn-val">2024</div>
+                  <div className="kn-val"></div>
                   <div className="kn-lbl">B.Sc. Arch AAUA</div>
                 </div>
                 <div className="kn">
                   <div className="kn-val">VI</div>
-                  <div className="kn-lbl">Lagos Internship</div>
+                  <div className="kn-lbl">Internship @ RTC</div>
                 </div>
                 <div className="kn">
                   <div className="kn-val">3D</div>
@@ -114,7 +114,7 @@ export default function CVPage() {
               <div className="edu">
                 <div className="edu-deg">B.Sc. Architecture</div>
                 <div className="edu-sch">Adekunle Ajasin University<br />Akungba-Akoko, Ondo State</div>
-                <div className="edu-yr">2020 – 2024</div>
+                <div className="edu-yr">2021 – 2025</div>
               </div>
               <div className="rule"></div>
               <div className="edu">
@@ -137,7 +137,7 @@ export default function CVPage() {
             <div className="sec">
               <div className="sec-head">Professional Profile</div>
               <p className="summary-text">
-                Architectural graduate and practising designer with a B.Sc. in Architecture from Adekunle Ajasin University (2024) and six months of hands-on internship experience at RTC Construction Ltd on Victoria Island, Lagos. Specialises in hyper-realistic 3D architectural visualization using Lumion, Blender, and Chief Architect, alongside production-grade BIM documentation in Revit and AutoCAD. Grounded by masonry training and direct site supervision experience, bringing a buildability-first approach to every design and drawing delivered.
+                Architectural graduate and practising designer with a B.Sc. in Architecture from Adekunle Ajasin University (2025) and six months of hands-on internship experience at RTC Construction Ltd on Victoria Island, Lagos. Specialises in hyper-realistic 3D architectural visualization using Lumion, Blender, and Chief Architect, alongside production-grade BIM documentation in Revit and AutoCAD. Grounded by masonry training and direct site supervision experience, bringing a buildability-first approach to every design and drawing delivered.
               </p>
             </div>
 
@@ -211,7 +211,7 @@ export default function CVPage() {
               <div className="exp">
                 <div className="exp-row">
                   <div className="exp-role">Mixed-Use Commercial Development</div>
-                  <div className="exp-date">2023</div>
+                  <div className="exp-date">2025</div>
                 </div>
                 <div className="exp-org">3D Visualization &amp; BIM Documentation · Revit / AutoCAD / Lumion</div>
                 <ul className="bullets">
@@ -244,7 +244,7 @@ export default function CVPage() {
 
         <div className="cv-foot">
           <span>Adekunle Emmanuel &nbsp;·&nbsp; <strong>Architect &amp; Visualizer</strong></span>
-          <span>hello@archiplus.ng &nbsp;·&nbsp; Lagos, Nigeria</span>
+          <span>adekunleolufemie@gmail.com &nbsp;·&nbsp; Lagos, Nigeria</span>
           <span>References on request</span>
         </div>
       </div>
