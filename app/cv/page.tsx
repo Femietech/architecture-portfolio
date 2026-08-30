@@ -1,6 +1,39 @@
 'use client';
 
 export default function CVPage() {
+  const driveFolders = [
+    {
+      title: 'Project Portfolio 01',
+      label: 'Residential & Visual Storytelling',
+      url: 'https://drive.google.com/drive/folders/18ENt_hQoxduHs7weGlNAm9UW6ZgCwxh8?usp=drive_link',
+    },
+    {
+      title: 'Project Portfolio 02',
+      label: 'Commercial & Mixed-Use Concepts',
+      url: 'https://drive.google.com/drive/folders/1PYj48sWcxMfNhHVMWSCgZpdNDkSTRx-4?usp=drive_link',
+    },
+    {
+      title: 'Project Portfolio 03',
+      label: 'Interior Design & Spatial Studies',
+      url: 'https://drive.google.com/drive/folders/1YsMKYTjNRYMe3frBgp1uxS8K9iiQTR1m?usp=drive_link',
+    },
+    {
+      title: 'Project Portfolio 04',
+      label: 'Architectural Documentation',
+      url: 'https://drive.google.com/drive/folders/1OcINpCUV9jg_LIlFshk4i3GeLGn-sHzw?usp=drive_link',
+    },
+    {
+      title: 'Project Portfolio 05',
+      label: 'Site Execution & Supervision',
+      url: 'https://drive.google.com/drive/folders/1VjGtHbAoMD5JbfYs3S3pIDdIh69NBa_G?usp=drive_link',
+    },
+    {
+      title: 'Project Portfolio 06',
+      label: 'Concept & Visualization Archive',
+      url: 'https://drive.google.com/drive/folders/1J1XfyznmcWeo-khajYLU6h7yxfV99qTP?usp=drive_link',
+    },
+  ];
+
   return (
     <div className="cv-shell">
       <div className="printbar">
@@ -36,7 +69,7 @@ export default function CVPage() {
               <div className="side-head">At a Glance</div>
               <div className="kn-grid">
                 <div className="kn">
-                  <div className="kn-val">4+</div>
+                  <div className="kn-val">7+</div>
                   <div className="kn-lbl">Years in Practice</div>
                 </div>
                 <div className="kn">
@@ -114,13 +147,13 @@ export default function CVPage() {
               <div className="edu">
                 <div className="edu-deg">B.Sc. Architecture</div>
                 <div className="edu-sch">Adekunle Ajasin University<br />Akungba-Akoko, Ondo State</div>
-                <div className="edu-yr">2021 – 2025</div>
+                <div className="edu-yr">2022 – 2026</div>
               </div>
               <div className="rule"></div>
               <div className="edu">
                 <div className="edu-deg">Masonry &amp; Structural Training</div>
                 <div className="edu-sch">Vocational / Field Training — Nigeria</div>
-                <div className="edu-yr">2021</div>
+                <div className="edu-yr">2015</div>
               </div>
             </div>
 
@@ -193,6 +226,28 @@ export default function CVPage() {
             </div>
 
             <div className="sec">
+              <div className="sec-head">Portfolio Folder Library</div>
+              <div className="drive-grid">
+                {driveFolders.map((folder, index) => (
+                  <a
+                    key={folder.url}
+                    href={folder.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="drive-card"
+                  >
+                    <div className="drive-index">0{index + 1}</div>
+                    <div className="drive-meta">
+                      <div className="drive-title">{folder.title}</div>
+                      <div className="drive-label">{folder.label}</div>
+                    </div>
+                    <span className="drive-link">Open folder →</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div className="sec">
               <div className="sec-head">Notable Projects</div>
 
               <div className="exp">
@@ -202,7 +257,7 @@ export default function CVPage() {
                 </div>
                 <div className="exp-org">Architectural Visualization · Lumion &amp; Blender</div>
                 <ul className="bullets">
-                  <li>Delivered a full photorealistic walkthrough animation and static render set for a multi-unit residential complex in Lagos — used directly in the client's investor presentation and pre-sale campaign before groundbreak.</li>
+                  <li>Delivered a full photorealistic walkthrough animation and static render set for a multi-unit residential complex in Lagos — used directly in the client&apos;s investor presentation and pre-sale campaign before groundbreak.</li>
                 </ul>
               </div>
 
@@ -531,6 +586,66 @@ export default function CVPage() {
           border: 1px solid #ddd9d2;
           padding: 3px 8px;
           letter-spacing: 0.02em;
+        }
+        .drive-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
+        }
+        .drive-card {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          padding: 14px 14px 14px 12px;
+          background: #f7f4f1;
+          border: 1px solid #ddd9d2;
+          transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+          text-decoration: none;
+          color: inherit;
+        }
+        .drive-card:hover {
+          transform: translateY(-2px);
+          border-color: #8b1a1a;
+          box-shadow: 0 8px 20px rgba(17, 17, 17, 0.06);
+        }
+        .drive-index {
+          min-width: 38px;
+          height: 38px;
+          display: grid;
+          place-items: center;
+          background: #111111;
+          color: #f5f1eb;
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+        }
+        .drive-meta {
+          flex: 1;
+          min-width: 0;
+        }
+        .drive-title {
+          font-family: 'Cormorant', Georgia, serif;
+          font-size: 18px;
+          font-weight: 700;
+          color: #111111;
+          line-height: 1.1;
+          margin-bottom: 2px;
+        }
+        .drive-label {
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #777777;
+        }
+        .drive-link {
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #8b1a1a;
+          white-space: nowrap;
         }
         .cv-foot {
           border-top: 2.5px solid #111111;
